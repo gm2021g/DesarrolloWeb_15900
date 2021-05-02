@@ -1,0 +1,315 @@
+@charset "UTF-8";
+#fondoFormu {
+  background-color: #f6f9fa;
+  margin-left: 1vw;
+  padding-left: 1vw;
+  padding-bottom: 1vh;
+  padding-top: 1vh; }
+
+.estiloTabla {
+  color: #f77307; }
+
+video {
+  max-width: 100%;
+  height: auto; }
+
+hr.lineaSepara {
+  border: 0.277vh solid #e78331; }
+
+body {
+  background-color: #f0eedd;
+  margin: 1.38vh; }
+
+header {
+  background-image: linear-gradient(to left, #e78331, #f0eedd);
+  height: 33.24vh; }
+
+#menu {
+  float: left;
+  width: 65%;
+  margin-top: 2.077vh;
+  margin-right: 10%;
+  align-items: center;
+  justify-items: center; }
+
+#logo {
+  float: left; }
+
+#logoWhatsapp {
+  position: fixed;
+  height: 8.31vh;
+  width: 8.31vh;
+  bottom: 1.577vh;
+  right: 1.577vh;
+  border: 0.157vh solid #a5b1a5; }
+
+/* comienza estilos Flexbox  index  galería de fotos */
+.estiloSocios {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly; }
+
+.estiloSocios__cardSocio {
+  flex: 0 0 27.7vh;
+  margin: 2.7vh;
+  border: 0.13vh solid #ccc;
+  box-shadow: 0.27vh 0.27vh 0.83vh 0vh #f88502;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: height 1s, width 1s;
+  justify-items: center; }
+
+.estiloSocios__cardSocio:hover {
+  height: 41.55vh;
+  background-color: wheat;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: oblique;
+  font-weight: bold;
+  font-size: 140%;
+  margin: 0vh; }
+
+.estiloSocios__cardSocioImg {
+  overflow: hidden;
+  height: 16.62vh;
+  width: 100%; }
+
+.estiloSocios__cardSocioDiv {
+  padding: 0.788vh 0.788vh 0.788vh 2.365vh;
+  /*  padding-top   padding-right   padding-bottom   padding-left  */ }
+
+/* termina estilos Flexbox  index  galería de fotos */
+/* comienza estilos título, subtítulo y texto */
+.estiloTexto__titulo {
+  color: #e78331;
+  font-style: normal;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: justify;
+  font-weight: bold;
+  font-size: 3.943vh; }
+
+.estiloTexto__subtitulo {
+  font-family: 'Hind', sans-serif;
+  font-weight: bold;
+  font-size: 4.258vh; }
+
+.estiloTexto__sub-subtitulo {
+  font-family: 'Hind', sans-serif;
+  font-weight: bold;
+  font-size: 3.144vh; }
+
+.estiloTexto__parrafo {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2.67vh; }
+
+/* termina estilos título, subtítulo y texto */
+/* comienza  Flexbox  footer  */
+.estiloFooter {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center; }
+  .estiloFooter__footerBloque {
+    flex: 0 0 48.47vh;
+    margin: 2.077vh;
+    border: 0; }
+  .estiloFooter__footerTitulo {
+    padding: 0.692vh 0.692vh 0.692vh 4.847vh;
+    border: 0.138vh solid wheat;
+    box-shadow: 0.277vh 0.277vh 0.415vh 0vh grey;
+    background-color: wheat;
+    animation-duration: 2s;
+    animation-name: letras; }
+  .estiloFooter__footerItems {
+    padding: 0.69vh 0.69vh 0.69vh 4.84vh; }
+  .estiloFooter__texto {
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; }
+
+@keyframes letras {
+  0% {
+    opacity: 0;
+    color: #8a3451; }
+  100% {
+    opacity: 1;
+    color: #e78331; } }
+
+/* termina  Flexbox  footer  */
+/* comienza  Flexbox  Seccion4_Articulos  */
+.estiloArticulos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+  .estiloArticulos__articulo {
+    flex: 13.8vh 13.8vh 27.7vh 13.8vh;
+    margin: 5.5vh;
+    border-top: 0.13vh solid wheat; }
+  .estiloArticulos__articulo2 {
+    flex: 0 0 27.7vh;
+    border: 0.69vh solid wheat;
+    box-shadow: 0.27vh 0.27vh 0.83vh 0vh grey;
+    align-self: center; }
+  .estiloArticulos__detalle {
+    padding: 0 2.77vh 2.77vh; }
+  .estiloArticulos__listaArticulos {
+    color: black;
+    list-style-type: circle;
+    list-style-position: inside;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic; }
+
+/* termina  Flexbox  Seccion4_Articulos */
+/* comienza grids Seccion3_Planes.html */
+#grilla {
+  display: grid;
+  grid-template-rows: 11.08vh 110.80vh 41.551vh;
+  grid-template-columns: 100%;
+  grid-template-areas: "titulo" "tabla" "footer"; }
+
+/* termina grids Seccion3_Planes.html */
+#descripUno, #descripDos, #descripTres, #descripCuatro li {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 2.05vh; }
+
+#claseUno, #claseDos, #claseTres, #claseCuatro li {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+
+/* comienza Grilla de la tabla de planes */
+#grillaDos {
+  display: grid;
+  grid-template-columns: 15% 15% 20% 50%;
+  grid-template-rows: 5% 24% 24% 24% 24%;
+  border-radius: 4.155vh;
+  grid-template-areas: "tituloUno     tituloDos     tituloTres    tituloCuatro" "planUno       claseUno      precioUno     descripUno" "planDos       claseDos      precioDos     descripDos" "planTres      claseTres     precioTres    descripTres" "planCuatro    claseCuatro   precioCuatro  descripCuatro";
+  justify-items: center;
+  align-items: center;
+  border: 0.138vh solid black;
+  padding: 3.462vh 0.69vh 0.69vh 4.847vh; }
+
+#grillaDos #tituloUno,
+#grillaDos #tituloDos,
+#grillaDos #tituloTres,
+#grillaDos #tituloCuatro {
+  background-color: wheat;
+  border-radius: 4.155vh;
+  padding: 1.108vh; }
+
+/* termina Grilla de la tabla de planes */
+/* comienza Grilla del menú */
+#grillaTres {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  justify-items: start;
+  align-items: center;
+  width: 100%; }
+  #grillaTres li {
+    width: 100%; }
+
+#grillaMenu {
+  display: grid;
+  grid-template-columns: max-content;
+  grid-template-rows: 100%;
+  grid-template-areas: "areaUno areaDos";
+  justify-items: start;
+  align-items: left;
+  background-image: linear-gradient(to left, #d0914e, wheat); }
+
+/* termina Grilla del menú */
+.areaDos {
+  align-self: start;
+  justify-self: left; }
+
+/* comienza media tablet */
+@media only screen and (max-width: 768px) {
+  #grillaMenu {
+    display: grid;
+    grid-template-columns: max-content;
+    font-size: 1.66vh; }
+  .dropdown-item {
+    font-size: 1.662vh; }
+  #grilla {
+    display: grid;
+    grid-template-rows: 12.618vh 181.388vh 39.432vh; }
+  #grillaTres {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    background-color: #e78331;
+    margin-left: 17.350vh;
+    margin-top: 0vh;
+    font-size: 1.577vh;
+    height: 31.54vh;
+    width: 45%; }
+  #grillaDos {
+    display: grid;
+    height: 181.388vh;
+    font-size: 1.662vh;
+    border: 0.157vh solid #e78331;
+    /* overflow-y: scroll; */ }
+  #estiloArticulo_imagen {
+    width: 50%;
+    height: 50%; }
+  .estiloFooter {
+    align-items: center; }
+  /* termina  media tablet */ }
+
+/* comienza media mobile */
+@media only screen and (max-width: 480px) {
+  #grillaMenu {
+    display: grid;
+    grid-template-columns: max-content;
+    font-size: 1.892vh; }
+  .dropdown-item {
+    font-size: 1.892vh; }
+  #grilla {
+    display: grid;
+    grid-template-rows: 12.618vh 244.479vh 39.432vh; }
+  #grillaTres {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    background-color: #e78331;
+    margin-left: 23.659vh;
+    margin-top: 0vh;
+    height: 31.545vh;
+    width: 45%; }
+    #grillaTres li {
+      width: 100%;
+      font-size: 1.577vh; }
+  #grillaDos {
+    display: grid;
+    height: 244.47vh;
+    font-size: 1.892vh;
+    border: 0.157vh solid wheat;
+    /* overflow-y: scroll; */ }
+  #estiloArticulo_imagen {
+    width: 50%;
+    height: 50%; }
+  .estiloFooter {
+    align-items: center; }
+  /* termina media mobile */ }
+
+input {
+  transition: all 1s; }
+
+input:focus {
+  width: 23.659vw;
+  font-size: 2.839vh;
+  background-color: wheat; }
+
+.letraBeneficios {
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: large;
+  font-weight: bold;
+  margin-left: 1.104vh; }
+
+i {
+  font-size: 6.309vh; }
+
+i:hover {
+  font-size: 7.886vh;
+  color: blue; }

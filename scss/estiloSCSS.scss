@@ -1,0 +1,405 @@
+  @import "variables";
+  @import "estilosFormulario";
+
+  video {
+    max-width: 100%;
+    height: auto;
+  }
+
+  hr.lineaSepara{
+      border: 0.277vh solid $colorBase;
+    }    
+
+  @mixin sizes ($width, $height){
+     height: $height;
+     width: $width; 
+  }
+
+  @mixin fondoColor ($color){
+    background-color: $color;  
+  }
+  
+  body{ 
+    @include fondoColor ($colorCuatro); 
+    margin: 1.38vh;
+  }
+  
+  header {
+    background-image: linear-gradient(to left, $colorBase, $colorCuatro);
+    height: 33.24vh;
+  }
+  
+  #menu {
+    float:left;
+    width: 65%;
+    margin-top: 2.077vh; 
+    margin-right: 10%;
+    align-items: center;
+    justify-items: center;
+  } 
+  
+  #logo {
+    float:left;    
+  }
+  
+  #logoWhatsapp{
+    position:fixed;    
+    @include sizes (8.310vh, 8.310vh);
+    bottom: 1.577vh;
+    right: 1.577vh;
+    border: 0.157vh solid $colorLogoWApp;
+  }  
+  
+  /* comienza estilos Flexbox  index  galería de fotos */
+  .estiloSocios {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-evenly; }
+
+      .estiloSocios__cardSocio {
+      flex: 0 0 27.7vh;
+      margin: 2.7vh;
+      border: 0.13vh solid #ccc;
+      box-shadow: 0.27vh 0.27vh 0.83vh 0vh #f88502;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      transition: height 1s, width 1s;
+      justify-items: center; }
+
+      .estiloSocios__cardSocio:hover {
+      height: 41.55vh;
+      @include fondoColor ($colorDos);
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-style: oblique;
+      font-weight: bold;
+      font-size: 140%;
+      margin: 0vh; }
+
+      .estiloSocios__cardSocioImg {
+      overflow: hidden;
+      @include sizes (100%, 16.62vh);
+    }
+
+      .estiloSocios__cardSocioDiv {
+         padding:  0.788vh 0.788vh 0.788vh 2.365vh;  /*  padding-top   padding-right   padding-bottom   padding-left  */ 
+  }
+  /* termina estilos Flexbox  index  galería de fotos */
+
+  /* comienza estilos título, subtítulo y texto */
+  .estiloTexto {
+     
+     &__titulo {
+      color: $colorBase;
+      font-style:normal;        
+      font-family: Verdana, Geneva, Tahoma, sans-serif;      
+      text-align:justify;
+      font-weight:bold;   
+      font-size: 3.943vh; 
+     }  
+
+     &__subtitulo {
+      font-family: 'Hind', sans-serif;
+      font-weight: bold;
+      font-size: 4.258vh; 
+     }  
+
+     &__sub-subtitulo {
+      font-family: 'Hind', sans-serif;
+      font-weight: bold;
+      font-size: 3.144vh; 
+     }  
+
+     &__parrafo {
+       font-family: Verdana, Geneva, Tahoma, sans-serif;
+       font-size: 2.67vh; 
+     }       
+  }
+  /* termina estilos título, subtítulo y texto */
+  
+  /* comienza  Flexbox  footer  */  
+    .estiloFooter {
+       display: flex;
+       flex-wrap: wrap;
+       align-items:flex-start;
+       justify-content: center;
+
+  
+       &__footerBloque {
+        flex: 0 0 48.47vh;
+        margin: 2.077vh;
+        border: 0;
+
+       }  
+     
+       &__footerTitulo{
+         padding:  0.692vh 0.692vh 0.692vh 4.847vh; 
+         border: 0.138vh solid $colorDos;
+         box-shadow: 0.277vh 0.277vh 0.415vh 0vh grey;
+         @include fondoColor ($colorDos); 
+         animation-duration: 2s;
+         animation-name: letras;
+       }
+   
+       &__footerItems {
+         padding:  0.69vh 0.69vh 0.69vh 4.84vh; 
+       }
+
+       &__texto {
+        color: black;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }       
+    
+  }
+
+   @keyframes letras {
+      0% {
+        opacity: 0;
+        color: $colorTres; 
+      }
+      100% {
+        opacity: 1;
+        color: $colorBase;
+      }
+   }  
+  /* termina  Flexbox  footer  */
+  
+  /* comienza  Flexbox  Seccion4_Articulos  */  
+  .estiloArticulos {  
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;  
+    justify-content: space-around;
+  
+    &__articulo {
+      flex: 13.8vh 13.8vh 27.7vh 13.8vh;
+      margin: 5.5vh;
+      border-top: 0.13vh solid $colorDos;
+    } 
+  
+    &__articulo2 {
+      flex: 0 0 27.7vh;
+      border: 0.69vh solid $colorDos;
+      box-shadow: 0.27vh 0.27vh 0.83vh 0vh grey;
+      align-self: center;
+    } 
+  
+    &__detalle {
+      padding: 0 2.77vh 2.77vh;
+    }
+
+    &__listaArticulos{
+      color:black;
+      list-style-type: circle;
+      list-style-position: inside;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-style:italic;     
+    }
+
+  }
+  /* termina  Flexbox  Seccion4_Articulos */
+  
+  /* comienza grids Seccion3_Planes.html */
+  #grilla{
+    display: grid;
+    grid-template-rows: 11.08vh 110.80vh 41.551vh;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+                        "titulo"
+                        "tabla"
+                        "footer";
+  }
+  /* termina grids Seccion3_Planes.html */
+  
+  #descripUno, #descripDos, #descripTres, #descripCuatro li {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 2.05vh;
+  } 
+  
+  #claseUno, #claseDos, #claseTres, #claseCuatro li {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  /* comienza Grilla de la tabla de planes */
+  #grillaDos{  
+    display: grid;
+    grid-template-columns: 15% 15% 20% 50%;  
+    grid-template-rows: 5% 24% 24% 24% 24%; 
+    border-radius: 4.155vh;
+    grid-template-areas: 
+    "tituloUno     tituloDos     tituloTres    tituloCuatro"
+    "planUno       claseUno      precioUno     descripUno"
+    "planDos       claseDos      precioDos     descripDos"
+    "planTres      claseTres     precioTres    descripTres"
+    "planCuatro    claseCuatro   precioCuatro  descripCuatro";
+    justify-items: center;
+    align-items: center;
+    border: 0.138vh solid black;
+    padding: 3.462vh 0.69vh 0.69vh 4.847vh; 
+  }
+  
+  #grillaDos #tituloUno,
+  #grillaDos #tituloDos,
+  #grillaDos #tituloTres,
+  #grillaDos #tituloCuatro
+  {
+     @include fondoColor ($colorDos);
+     border-radius: 4.155vh;
+     padding: 1.108vh;
+  }
+  /* termina Grilla de la tabla de planes */
+  
+  /* comienza Grilla del menú */
+  #grillaTres{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;  
+    justify-items: start;
+    align-items: center;
+    width: 100%;
+       li {
+         width: 100%;
+       }
+  }
+  
+  #grillaMenu
+  {
+    display: grid;
+    grid-template-columns:max-content;
+    grid-template-rows: 100%;
+    grid-template-areas: "areaUno areaDos";
+    justify-items: start;
+    align-items: left;
+    background-image: linear-gradient(to left, #d0914e, $colorDos);
+  }
+  /* termina Grilla del menú */
+  
+  .areaDos
+  {
+   align-self: start;
+   justify-self: left;
+  }  
+
+  /* comienza media tablet */
+  @media only screen and (max-width: 768px){
+    #grillaMenu  {
+       display: grid;
+       grid-template-columns:max-content;
+       font-size: 1.66vh
+    }
+
+    .dropdown-item {  
+     font-size: 1.662vh; 
+    }
+
+    #grilla{
+      display: grid;
+      grid-template-rows: 12.618vh 181.388vh 39.432vh;
+    }
+  
+    #grillaTres{
+        display: flex; 
+        flex-direction: column;
+        grid-template-columns: 100%;
+        grid-template-rows: 20% 20% 20% 20% 20%;
+        @include fondoColor ($colorBase);
+        margin-left: 17.350vh;
+        margin-top: 0vh;
+        font-size: 1.577vh;    
+        @include sizes (45%, 31.54vh);
+    }
+  
+    #grillaDos{  
+      display: grid;
+      height: 181.388vh; 
+      font-size:1.662vh;
+      border: 0.157vh solid $colorBase;
+      /* overflow-y: scroll; */ 
+    }
+
+    #estiloArticulo_imagen {
+      width: 50%;
+      height: 50%;
+    }
+
+    .estiloFooter {
+      align-items:center; }
+    /* termina  media tablet */
+  }
+  
+  /* comienza media mobile */
+  @media only screen and (max-width: 480px){
+    #grillaMenu  {
+      display: grid;
+      grid-template-columns:max-content;
+      font-size: 1.892vh;    
+   }
+
+   .dropdown-item {  
+     font-size: 1.892vh; 
+   }
+
+    #grilla{
+      display: grid;
+      grid-template-rows: 12.618vh 244.479vh 39.432vh;
+    }
+  
+    #grillaTres{
+        display: flex; 
+        flex-direction: column;    
+        grid-template-columns: 100%;
+        grid-template-rows: 20% 20% 20% 20% 20%;
+        @include fondoColor ($colorBase);
+        margin-left: 23.659vh;
+        margin-top: 0vh;
+           li {
+            width: 100%;
+            font-size: 1.577vh;
+           }
+        @include sizes (45%, 31.545vh); 
+    }
+  
+    #grillaDos{  
+      display: grid;
+      height: 244.47vh; 
+      font-size: 1.892vh;
+      border: 0.157vh solid $colorDos;
+      /* overflow-y: scroll; */ 
+    }
+
+    #estiloArticulo_imagen {
+      width: 50%;
+      height: 50%;
+    }
+
+    .estiloFooter {
+      align-items:center; }
+
+    /* termina media mobile */
+  }
+  
+  input {
+    transition: all 1s;       
+  }
+  
+  input:focus {
+    width: 23.659vw;
+    font-size: 2.839vh;
+    @include fondoColor ($colorDos);
+  }
+  
+  .letraBeneficios {
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:large;
+    font-weight: bold;
+    margin-left: 1.104vh;
+  }
+  
+  i{
+    font-size:6.309vh;
+  }
+  
+  i:hover{
+     font-size:7.886vh;
+     color: $colorIconos; 
+  } 

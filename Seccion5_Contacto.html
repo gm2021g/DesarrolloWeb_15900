@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+         <meta charset="UTF-8">
+         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+         <link rel="preconnect" href="https://fonts.gstatic.com">
+
+         <link href="https://fonts.googleapis.com/css2?family=Amaranth&display=swap" rel="stylesheet"> 
+         
+         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous"> <!-- bootstrap -->
+
+         <link rel="stylesheet" href="css/estilo.css"> 
+
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"  />
+
+         <title>OSTMA Contacto</title> 
+
+         <meta name="description" content="Obra Social Mascotas Contactos" >
+
+         <meta name="keywords" content="OSTMA, Obra Social, Mascotas, Contactos" >      
+  </head>  
+ 
+  <body>
+    
+    <section id="grillaMenu">
+        <div id="areaUno">
+          <img src="imagenes/LogoOSTMA.jpg" alt="Logo OTSMA" />
+        </div>    
+        
+        <div class="areaDos">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+              <div class="container-fluid">
+    
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link" href="Index.html"> Inicio </a>
+                    </li>
+    
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Beneficios y Planes
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="Seccion2_Beneficios.html" > Beneficios </a></li>
+                        <li><a class="dropdown-item" href="Seccion3_Planes.html"> Planes </a></li>
+                      </ul>
+                    </li>
+    
+                    <li class="nav-item">
+                      <a class="nav-link" href="Seccion4_Articulos.html"> Artículos y Novedades </a>
+                    </li>              
+    
+                    <li class="nav-item">
+                      <a class="nav-link" href="Seccion5_Contacto.html"> Contacto </a>
+                    </li>
+                    
+                  </ul>
+                  <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-warning" type="submit">Buscar</button>
+                  </form>
+                </div>
+              </div>
+            </nav>  
+        </div>  
+    </section>  
+
+    <hr class="lineaSepara">
+       
+    <main>
+
+      <p class="animate__animated animate__headShake estiloTexto__titulo"> Completa el formulario y te contactaremos a la brevedad </p>
+      <section>
+               
+          <div id="fondoFormu" >
+          <form action="" >
+              <fieldset > 
+                  <legend> <B> Completa los siguientes datos </B> </legend>
+
+                  <br>
+                  <br>
+                  <label for="nombre"><b>Nombre</b> </label>	
+                  <input type="text" name="nombre"/>
+
+                  <br>
+                  <br>
+                  <label for="apellido"><b>Apellido</b> </label> 
+                  <input type="text" name="apellido">
+
+                  <br>
+                  <br>
+                  <label for="telefono"><b>Teléfono</b> </label> 
+                  <input type="text" name="telefono">
+
+                  <br>
+                  <br>
+                  <label for="email"><b>Email</b> </label> 
+                  <input type="email" name="email" placeholder="nombre@ejemplo.com"/>
+
+                  <br>
+                  <br>
+                  <fieldset>
+                  <label for="nombreMascota"><b>Nombre de tu mascota </b></label> 
+                  <input type="text" name="nombreMascota">
+
+                  <br>
+                  <br>
+                  <label for="tipo"><b>Tipo de mascota </b></label>                   
+                  <select name="tipo" >
+                      <option value="">Perro</option>
+                      <option value="">Gato</option>
+                      <option value="">Roedor</option>
+                      <option value="">Reptil</option>    
+                      <option value="">Pez</option>  
+                  </select>
+
+                  <br>
+                  <br>                  
+                  <label for="edad"><b>Edad</b> </label> 
+                  <input type="number" name="edad">  
+
+                  <br>
+                  <br>  
+                  <label for="sexo"><b>Sexo</b> </label>  
+                  <div>Hembra
+                    <input type="radio" name="sexo" value="hembra" />
+                  </div>
+                  <div>Macho
+                    <input type="radio" name="sexo" value="macho" />
+                  </div>              
+                  </fieldset>
+
+                  <br>
+                  <br>  
+                  <label for="newsletter"><b>¿ Desea recibir novedades y promociones por email ? </b> </label>  
+                  <input type="checkbox" name='newsletter'> 
+
+                  <br>
+                  <br>  
+                  <p id="textoNegro"><b>Comentarios</b></p> 
+                  <textarea rows="5" cols="50" >
+                     Escribe aquí tus comentarios
+                  </textarea>                  
+
+                  <br>
+                  <br>
+                  <input type="submit" value="Enviar formulario"/>
+                  <input type="reset" value="Limpiar formulario"/>              
+
+              </fieldset>
+          </form>
+          </div>
+
+          <img id="logoWhatsapp" src="imagenes/LogoWhatsApp.gif" alt="Envianos un Whatsapp">
+
+      </section>      
+   
+    </main>
+
+    <footer> 
+      <br>  
+      <div>
+         <a href="Index.html"><b>VOLVER</b></a>          
+      </div>
+
+      <hr class="lineaSepara">
+
+      <div  class="estiloFooter">
+          
+        <div class="estiloFooter__footerBloque">
+
+          <div class="estiloFooter__footerTitulo"> 
+              <p class="fs-5">¿ Dónde estamos ?</p>
+          </div>    
+
+          <div class="estiloFooter__footerItems">
+             <p class="estiloFooter__texto"> Sede Central: Alem 3501 CABA </p>
+             <p class="estiloFooter__texto"> Teléfono: 4444-5555 </p>
+             <p class="estiloFooter__texto"> Email: contacto@ostma.com.ar </p>
+             <p class="estiloFooter__texto"> Whatsapp: 11-2222-4444 </p>
+          </div>
+
+        </div> 
+
+        <div class="estiloFooter__footerBloque">
+
+          <div class="estiloFooter__footerTitulo"> 
+             <p class="fs-5">Formas de Pago</p>
+          </div>
+
+          <div class="estiloFooter__footerItems">
+             <i class="fab fa-cc-visa"></i>
+             <i class="fab fa-cc-mastercard"></i>
+             <i class="fab fa-cc-diners-club"></i>
+             <p class="estiloFooter__texto"> Tarjetas de Débito </p>
+             <p class="estiloFooter__texto"> Débito automático</p>
+             <p class="estiloFooter__texto"> Mercado Pago</p>
+          </div>
+
+        </div> 
+
+        <div class="estiloFooter__footerBloque">
+
+          <div class="estiloFooter__footerTitulo"> 
+             <p class="fs-5">Seguinos en nuestras redes</p>
+          </div>  
+
+          <div class="estiloFooter__footerItems">
+             <i class="fab fa-facebook-square"></i>
+             <i class="fab fa-instagram-square"></i>
+             <i class="fab fa-twitter"></i>
+          </div>
+
+        </div> 
+      </div>
+    </footer>
+
+    <script src="js/wow.min.js"></script>
+    <script>
+       new WOW().init();
+    </script>
+      
+     <!-- Arriba del </body> van todos los scripts   -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/4d1928d421.js" crossorigin="anonymous"></script>  <!-- iconos -->
+  </body>
+
+</html>
