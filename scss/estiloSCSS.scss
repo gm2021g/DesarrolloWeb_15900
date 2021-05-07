@@ -51,42 +51,44 @@
   }  
   
   /* comienza estilos Flexbox  index  galería de fotos */
-  .estiloSocios {
+   .estiloSocios {
       display: flex;
       flex-wrap: wrap;
       align-items: center;
-      justify-content: space-evenly; }
+      justify-content:space-around; 
+      }
 
-      .estiloSocios__cardSocio {
+    .estiloSocios__cardSocio {
       flex: 0 0 27.7vh;
-      margin: 2.7vh;
-      border: 0.13vh solid #ccc;
-      box-shadow: 0.27vh 0.27vh 0.83vh 0vh #f88502;
+      margin: 2.7vh;  
+      border: 0.13vh solid $colorCuatro;
+      box-shadow: 0.27vh 0.27vh 0.83vh 0vh $colorBase;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       transition: height 1s, width 1s;
       justify-items: center; }
 
-      .estiloSocios__cardSocio:hover {
-      height: 41.55vh;
+    .estiloSocios__cardSocio:hover {
+
       @include fondoColor ($colorDos);
+      box-shadow: 0.27vh 0.27vh 0.83vh 0vh $colorTres;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
       font-style: oblique;
       font-weight: bold;
       font-size: 140%;
-      margin: 0vh; }
+    }
 
-      .estiloSocios__cardSocioImg {
-      overflow: hidden;
+    .estiloSocios__cardSocioImg {
+
       @include sizes (100%, 16.62vh);
     }
 
-      .estiloSocios__cardSocioDiv {
+     .estiloSocios__cardSocioDiv {
          padding:  0.788vh 0.788vh 0.788vh 2.365vh;  /*  padding-top   padding-right   padding-bottom   padding-left  */ 
-  }
+    }
   /* termina estilos Flexbox  index  galería de fotos */
 
   /* comienza estilos título, subtítulo y texto */
-  .estiloTexto {
+   .estiloTexto {
      
      &__titulo {
       color: $colorBase;

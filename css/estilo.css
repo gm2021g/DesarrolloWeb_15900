@@ -48,28 +48,26 @@ header {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-evenly; }
+  justify-content: space-around; }
 
 .estiloSocios__cardSocio {
   flex: 0 0 27.7vh;
   margin: 2.7vh;
-  border: 0.13vh solid #ccc;
-  box-shadow: 0.27vh 0.27vh 0.83vh 0vh #f88502;
+  border: 0.13vh solid #f0eedd;
+  box-shadow: 0.27vh 0.27vh 0.83vh 0vh #e78331;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   transition: height 1s, width 1s;
   justify-items: center; }
 
 .estiloSocios__cardSocio:hover {
-  height: 41.55vh;
   background-color: wheat;
+  box-shadow: 0.27vh 0.27vh 0.83vh 0vh #8a3451;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-style: oblique;
   font-weight: bold;
-  font-size: 140%;
-  margin: 0vh; }
+  font-size: 140%; }
 
 .estiloSocios__cardSocioImg {
-  overflow: hidden;
   height: 16.62vh;
   width: 100%; }
 
