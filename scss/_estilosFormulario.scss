@@ -1,12 +1,18 @@
 #fondoFormu {
     background-color:#f6f9fa;
-    margin-left: 1vw;
     padding-left: 1vw;
-    padding-bottom: 1vh;
-    padding-top: 1vh;
+    padding-right: 1vw;
+    padding-bottom: 6vh;
+    padding-top: 5vh;
+    width: 60%;
   }
 
 .estiloTabla{
     color: rgb(247, 115, 7);
 }
-  
+
+@media only screen and (max-width: 768px){
+  #fondoFormu {
+    width: 100%;
+  }
+}

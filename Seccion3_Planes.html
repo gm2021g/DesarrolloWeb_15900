@@ -11,6 +11,8 @@
          
          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous"> <!-- bootstrap -->
 
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"  />
+
          <link rel="stylesheet" href="css/estilo.css"> 
 
          <title>OSTMA Planes</title> 
@@ -20,204 +22,183 @@
          <meta name="keywords" content="Prepaga mascotas, Obra social para mascotas, Planes de salud mascotas, Planes veterinarios" >               
   </head>  
  
+  <nav id="grillaMenu" class="navbar navbar-expand-lg navbar-light" > 
+    <a class="navbar-brand" href="#">     
+       <img src="imagenes/LogoOSTMA_2.jpg" alt="Logo OTSMA" />
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">    
+      <ul class="navbar-nav me-auto"> 
+        <li class="nav-item" >
+          <a class="nav-link" href="index.html"> Home </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Seccion2_Beneficios.html"> Beneficios </a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="Seccion3_Planes.html"> <b>Planes</b> </a>
+        </li>  
+        <li class="nav-item">
+          <a class="nav-link" href="Seccion4_Articulos.html"> Artículos y Novedades </a>
+        </li>          
+        <li class="nav-item">
+          <a class="nav-link" href="Seccion5_Contacto.html"> Contacto </a>
+        </li>                                 
+      </ul>
+
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-warning" type="submit">Buscar</button>
+      </form>
+
+    </div>
+  </nav>  
+
   <body>
 
-    <section id="grillaMenu">
-
-        <div id="areaUno">
-          <img src="imagenes/LogoOSTMA.jpg" alt="Logo OTSMA" />
-        </div>    
-        
-        <div class="areaDos">
-
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-              <div class="container-fluid">
-    
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    
-                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                      <a class="nav-link" href="index.html"> Inicio </a>
-                    </li>
-    
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Beneficios y Planes
-                      </a>
-                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="Seccion2_Beneficios.html" > Beneficios </a></li>
-                        <li><a class="dropdown-item" href="Seccion3_Planes.html"> Planes </a></li>
-                      </ul>
-                    </li>
-    
-                    <li class="nav-item">
-                      <a class="nav-link" href="Seccion4_Articulos.html"> Artículos y Novedades </a>
-                    </li>              
-    
-                    <li class="nav-item">
-                      <a class="nav-link" href="Seccion5_Contacto.html"> Contacto </a>
-                    </li>
-                    
-                  </ul>
-                  <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-warning" type="submit">Buscar</button>
-                  </form>
-                </div>
-              </div>
-            </nav>  
-        </div>  
-    </section>  
-
-    <div id="grilla">   
       <nav>
-        <hr class="lineaSepara">
-        <p class="estiloTexto__titulo">  Planes para tu mascota </p>
+        <p class="animate__animated animate__headShake estiloTexto__titulo">  Planes para tu mascota </p>
       </nav>
 
-      <section id="grillaDos">
+      <section >
 
-          <!--  Fila 1 -->
-          <div id="tituloUno" >
-            <p><b> Plan </b></p>
-          </div>
-
-          <div id="tituloDos">
-            <p><b>Mascotas</b></p>
-          </div>
-
-          <div id="tituloTres">
-            <p><b>Precio mensual</b></p>
-          </div>
-
-          <div id="tituloCuatro">
-            <p><b>Beneficios</b></p>
-          </div>       
-
-          <!-- Fila 2  -->
-          <div id="planUno">
-            <p><b>210</b></p>
-          </div>
-
-          <div id="claseUno">
-            <ul> 
-              <li><b>Perros</b> </li>  
-              <li><b>Gatos</b> </li> 
-            </ul>  
-          </div>
-
-          <div id="precioUno">
-          <b><p>$ 600</b></p>
-          </div>
-
-          <div id="descripUno">
-            <ol> 
-               <li> Consulta domiciliaria: una vez por mes gratis</li>  
-               <li> Consulta en veterinaria: dos veces por mes gratis</li> 
-               <li> Descuento 20% en internación </li> 
-               <li> Descuento 20% vacunación anual </li> 
-               <li> Descuento 15% en medicamentos </li> 
-               <li> Análisis de rutina anual gratis </li> 
-               <li> Descuento 20% en examenes de alta complejidad </li> 
-            </ol> 
-          </div>   
+        <table id="tablaPlanes" class="table table-bordered table-hover table-responsive"> 
+          <thead>
+             <th>
+               Plan
+             </th>
+             <th>
+               Mascota
+             </th>
+             <th>
+               Precio Mensual
+             </th>
+             <th>
+               Beneficios
+            </th>               
+          </thead>
+      
+          <tbody>
+            <tr class="table-light">
+               <td>
+                210
+               </td>  
+               <td>
+                <ul> 
+                  <li><b>Perros</b> </li>  
+                  <li><b>Gatos</b> </li> 
+                </ul>  
+               </td>   
+               <td>    
+                 $ 600
+               </td>  
+               <td>
+                <ol> 
+                  <li> Consulta domiciliaria: una vez por mes gratis</li>  
+                  <li> Consulta en veterinaria: dos veces por mes gratis</li> 
+                  <li> Descuento 20% en internación </li> 
+                  <li> Descuento 20% vacunación anual </li> 
+                  <li> Descuento 15% en medicamentos </li> 
+                  <li> Análisis de rutina anual gratis </li> 
+                  <li> Descuento 20% en examenes de alta complejidad </li> 
+                </ol> 
+               </td>
+            </tr>
+      
+            <tr class="table-light">
+              <td>
+               310
+              </td>  
+              <td>
+               <ul> 
+                 <li><b>Perros</b> </li>  
+                 <li><b>Gatos</b> </li> 
+               </ul>  
+              </td>   
+              <td>    
+                $ 1000
+              </td>  
+              <td>
+                <ol>                    
+                  <li> Consulta domiciliaria: una vez por mes gratis</li>  
+                  <li> Consulta en veterinaria: tres veces por mes gratis</li> 
+                  <li> Descuento 40% en internación </li> 
+                  <li> Descuento 40% vacunación anual </li> 
+                  <li> Descuento 35% en medicamentos </li> 
+                  <li> Análisis de rutina anual gratis </li> 
+                  <li> Descuento 40% en examenes de alta complejidad </li>                   
+               </ol> 
+              </td>
+            </tr>
+      
+            <tr class="table-light">
+              <td>
+                410
+              </td>  
+              <td>
+               <ul> 
+                 <li><b>Perros</b> </li>  
+                 <li><b>Gatos</b> </li> 
+               </ul>  
+              </td>   
+              <td>    
+                $ 1200
+              </td>  
+              <td>
+                <ol> 
+                  <li> Consulta domiciliaria: una vez por mes gratis</li>  
+                  <li> Consulta en veterinaria: tres veces por mes gratis</li> 
+                  <li> Descuento 50% en internación </li> 
+                  <li> Análisis y Vacunación anual gratis </li> 
+                  <li> Descuento 50% en medicamentos </li> 
+                  <li> Descuento 50% en examenes de alta complejidad </li> 
+                  <li> Descuento 30% en cirugía y especialidades médicas</li> 
+               </ol> 
+              </td>
+            </tr>
+      
+            <tr class="table-light">
+              <td>
+               410
+              </td>  
+              <td>
+                <ul> 
+                  <li><b>Aves</b> </li>  
+                  <li><b>Peces</b> </li> 
+                  <li><b>Roedores</b> </li> 
+                  <li><b>Reptiles</b> </li> 
+                </ul>  
+              </td>   
+              <td>    
+                $ 1500
+              </td>  
+              <td>
+                 <ol> 
+                  <li>Consulta domiciliaria: una vez por mes gratis</li>  
+                  <li>Consulta en veterinaria: tres veces por mes gratis</li> 
+                  <li>Descuento 50% en internación </li> 
+                  <li>Descuento 50% en medicamentos </li> 
+                  <li>Análisis de rutina anual gratis </li> 
+                  <li>Descuento 40% en examenes de alta complejidad </li> 
+                  <li>Descuento 30% en cirugía y especialidades médicas</li>  
+                 </ol> 
+              </td>
+            </tr>
+      
+          </tbody>
+        </table>
           
-          <!-- Fila 3  -->
-          <div id="planDos">
-             <b><p>310</b></p>
-          </div>
-
-          <div id="claseDos">
-            <ul> 
-              <li><b>Perros</b> </li>  
-              <li><b>Gatos</b> </li> 
-            </ul>  
-          </div>
-
-          <div id="precioDos">
-             <b><p>$ 1000</b></p>
-          </div>
-
-          <div id="descripDos">             
-              <ol>                    
-                 <li> Consulta domiciliaria: una vez por mes gratis</li>  
-                 <li> Consulta en veterinaria: tres veces por mes gratis</li> 
-                 <li> Descuento 40% en internación </li> 
-                 <li> Descuento 40% vacunación anual </li> 
-                 <li> Descuento 35% en medicamentos </li> 
-                 <li> Análisis de rutina anual gratis </li> 
-                 <li> Descuento 40% en examenes de alta complejidad </li>                   
-              </ol> 
-          </div>   
-
-          <!-- Fila 4  -->
-          <div id="planTres">
-             <b><p>410</b></p>
-          </div>
-
-          <div id="claseTres">
-            <ul> 
-              <li><b>Perros</b> </li>  
-              <li><b>Gatos</b> </li> 
-            </ul>  
-          </div>
-
-          <div id="precioTres">
-             <b><p>$ 1200</b></p>
-          </div>
-
-          <div id="descripTres">             
-            <ol> 
-               <li> Consulta domiciliaria: una vez por mes gratis</li>  
-               <li> Consulta en veterinaria: tres veces por mes gratis</li> 
-               <li> Descuento 50% en internación </li> 
-               <li> Análisis y Vacunación anual gratis </li> 
-               <li> Descuento 50% en medicamentos </li> 
-               <li> Descuento 50% en examenes de alta complejidad </li> 
-               <li> Descuento 30% en cirugía y especialidades médicas</li> 
-            </ol> 
-          </div>   
-
-          <!-- Fila 5  -->
-          <div id="planCuatro">
-             <b><p>510</b></p>
-          </div>
-
-          <div id="claseCuatro">
-            <ul> 
-              <li><b>Aves</b> </li>  
-              <li><b>Peces</b> </li> 
-              <li><b>Roedores</b> </li> 
-              <li><b>Reptiles</b> </li> 
-            </ul>  
-          </div>
-
-          <div id="precioCuatro">
-             <b><p>$ 1500</b></p>
-          </div>
-
-          <div id="descripCuatro">             
-            <ol> 
-                <li>Consulta domiciliaria: una vez por mes gratis</li>  
-                <li>Consulta en veterinaria: tres veces por mes gratis</li> 
-                <li>Descuento 50% en internación </li> 
-                <li>Descuento 50% en medicamentos </li> 
-                <li>Análisis de rutina anual gratis </li> 
-                <li>Descuento 40% en examenes de alta complejidad </li> 
-                <li>Descuento 30% en cirugía y especialidades médicas</li>  
-            </ol> 
-          </div>      
-          
-          <img id="logoWhatsapp" src="imagenes/LogoWhatsApp.gif" alt="Envianos un Whatsapp">
+        <img id="logoWhatsapp" src="imagenes/LogoWhatsApp.gif" alt="Envianos un Whatsapp">
       </section>
 
       <footer> 
         <br>  
         <div>
-           <a href="index.html"><b>VOLVER</b></a>          
+          <a href="index.html"  class="estiloTexto__link" ><b>Volver</b></a>          
         </div>
   
         <hr class="lineaSepara">
@@ -274,7 +255,12 @@
       </footer>
     </div>
 
-     <!-- Arriba del </body> van todos los scripts   -->
+    <!-- Arriba del </body> van todos los scripts   -->
+    <script src="js/wow.min.js"></script>
+    <script>
+       new WOW().init();
+    </script>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>

@@ -7,7 +7,7 @@
   }
 
   hr.lineaSepara{
-      border: 0.277vh solid $colorBase;
+      border: 0.2vh $colorDos;
     }    
 
   @mixin sizes ($width, $height){
@@ -37,10 +37,6 @@
     align-items: center;
     justify-items: center;
   } 
-  
-  #logo {
-    float:left;    
-  }
   
   #logoWhatsapp{
     position:fixed;    
@@ -94,26 +90,38 @@
       color: $colorBase;
       font-style:normal;        
       font-family: Verdana, Geneva, Tahoma, sans-serif;      
-      text-align:justify;
+      text-align: center;
       font-weight:bold;   
-      font-size: 3.943vh; 
+      font-size: 3.5vh; 
+      margin-top: 5vh;
+      margin-bottom: 5vh;
      }  
 
      &__subtitulo {
       font-family: 'Hind', sans-serif;
+      text-align: center;
       font-weight: bold;
-      font-size: 4.258vh; 
+      font-size: 3.3vh; 
+      margin-top: 5vh;
+      margin-bottom: 5vh;      
      }  
 
      &__sub-subtitulo {
       font-family: 'Hind', sans-serif;
       font-weight: bold;
-      font-size: 3.144vh; 
+      text-align: center;
+      font-size: 2.7vh; 
      }  
 
      &__parrafo {
        font-family: Verdana, Geneva, Tahoma, sans-serif;
-       font-size: 2.67vh; 
+       font-size: 2.2vh; 
+     }
+
+     &__link {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 2vh;       
+        color: $colorBase;
      }       
   }
   /* termina estilos título, subtítulo y texto */
@@ -179,7 +187,7 @@
     } 
   
     &__articulo2 {
-      flex: 0 0 27.7vh;
+      flex: 0 0 27.7vh 0.2vh;
       border: 0.69vh solid $colorDos;
       box-shadow: 0.27vh 0.27vh 0.83vh 0vh grey;
       align-self: center;
@@ -210,18 +218,8 @@
                         "tabla"
                         "footer";
   }
-  /* termina grids Seccion3_Planes.html */
-  
-  #descripUno, #descripDos, #descripTres, #descripCuatro li {
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
-    font-size: 2.05vh;
-  } 
-  
-  #claseUno, #claseDos, #claseTres, #claseCuatro li {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  }
-  
+  /* termina grids Seccion3_Planes.html */  
+ 
   /* comienza Grilla de la tabla de planes */
   #grillaDos{  
     display: grid;
@@ -237,7 +235,8 @@
     justify-items: center;
     align-items: center;
     border: 0.138vh solid black;
-    padding: 3.462vh 0.69vh 0.69vh 4.847vh; 
+    padding: 2vh 0.6vh 0.6vh 0.6vh; 
+    font-size: 2vh;
   }
   
   #grillaDos #tituloUno,
@@ -249,6 +248,16 @@
      border-radius: 4.155vh;
      padding: 1.108vh;
   }
+
+  #descripUno, #descripDos, #descripTres, #descripCuatro li {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+  } 
+  
+  #claseUno, #claseDos, #claseTres, #claseCuatro li {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+
   /* termina Grilla de la tabla de planes */
   
   /* comienza Grilla del menú */
@@ -264,15 +273,9 @@
   }
   
   #grillaMenu
-  {
-    display: grid;
-    grid-template-columns:max-content;
-    grid-template-rows: 100%;
-    grid-template-areas: "areaUno areaDos";
-    justify-items: start;
-    align-items: left;
-    background-image: linear-gradient(to left, #d0914e, $colorDos);
-  }
+  { background-image: linear-gradient(to left, $colorBase, $colorDos);
+    padding: 0.5vw;
+   }
   /* termina Grilla del menú */
   
   .areaDos
@@ -283,15 +286,6 @@
 
   /* comienza media tablet */
   @media only screen and (max-width: 768px){
-    #grillaMenu  {
-       display: grid;
-       grid-template-columns:max-content;
-       font-size: 1.66vh
-    }
-
-    .dropdown-item {  
-     font-size: 1.662vh; 
-    }
 
     #grilla{
       display: grid;
@@ -313,33 +307,30 @@
     #grillaDos{  
       display: grid;
       height: 181.388vh; 
-      font-size:1.662vh;
+      font-size:1.3vh;
       border: 0.157vh solid $colorBase;
-      /* overflow-y: scroll; */ 
     }
 
     #estiloArticulo_imagen {
       width: 50%;
       height: 50%;
+      align-content: center;
     }
 
     .estiloFooter {
-      align-items:center; }
+      align-items: center; 
+    }
+
+    .areaDos
+    {
+     align-self: start;
+     justify-self: right;
+    }  
     /* termina  media tablet */
   }
   
   /* comienza media mobile */
   @media only screen and (max-width: 480px){
-    #grillaMenu  {
-      display: grid;
-      grid-template-columns:max-content;
-      font-size: 1.892vh;    
-   }
-
-   .dropdown-item {  
-     font-size: 1.892vh; 
-   }
-
     #grilla{
       display: grid;
       grid-template-rows: 12.618vh 244.479vh 39.432vh;
@@ -362,10 +353,9 @@
   
     #grillaDos{  
       display: grid;
-      height: 244.47vh; 
-      font-size: 1.892vh;
+      height: 200vh; 
+      font-size: 1.1vh;
       border: 0.157vh solid $colorDos;
-      /* overflow-y: scroll; */ 
     }
 
     #estiloArticulo_imagen {
@@ -376,25 +366,21 @@
     .estiloFooter {
       align-items:center; }
 
+    .areaDos
+      {
+       align-self: start;
+       justify-self: right;
+      }  
+
     /* termina media mobile */
   }
-  
-  input {
-    transition: all 1s;       
-  }
-  
-  input:focus {
-    width: 23.659vw;
-    font-size: 2.839vh;
-    @include fondoColor ($colorDos);
-  }
-  
+
   .letraBeneficios {
     color: black;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size:large;
     font-weight: bold;
-    margin-left: 1.104vh;
+    margin-left: 2vh;
   }
   
   i{
@@ -405,3 +391,33 @@
      font-size:7.886vh;
      color: $colorIconos; 
   } 
+
+  #tablaPlanes {  
+    background-color: $colorDos;
+    text-align: left; 
+    padding-bottom: 10vh;
+    padding-top: 10vh;
+  }
+ 
+.bloqueTextoImagen {
+  display: flex; 
+  flex-direction: row; 
+  align-items:flex-start;
+  flex-wrap: wrap;  
+  margin-left: 5vh;
+ 
+  &__texto {        
+      width: 120vh;
+  }
+
+  &__imagen {
+      align-content: center;
+      justify-content: center;    
+  }
+
+  &__linea {
+        font-family: 'Hind', sans-serif;
+        font-weight: bold;
+        font-size: 2.7vh; 
+  }
+}

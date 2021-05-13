@@ -10,7 +10,9 @@
          <link href="https://fonts.googleapis.com/css2?family=Amaranth&display=swap" rel="stylesheet"> 
          
          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous"> <!-- bootstrap -->
-
+         
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"> 
+         
          <link rel="stylesheet" href="css/estilo.css"> 
 
          <title>OSTMA Beneficios</title> 
@@ -20,83 +22,76 @@
          <meta name="keywords" content="Prepaga mascotas, Obra social para mascotas, Beneficios mascotas, Medicina veterianria preventiva" >         
   </head>  
   
+  <nav id="grillaMenu" class="navbar navbar-expand-lg navbar-light" > 
+    <a class="navbar-brand" href="#">     
+       <img src="imagenes/LogoOSTMA_2.jpg" alt="Logo OTSMA" />
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">    
+      <ul class="navbar-nav me-auto"> 
+        <li class="nav-item" >
+          <a class="nav-link" href="index.html"> Home </a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="Seccion2_Beneficios.html"> <b>Beneficios</b> </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Seccion3_Planes.html"> Planes </a>
+        </li>  
+        <li class="nav-item">
+          <a class="nav-link" href="Seccion4_Articulos.html"> Artículos y Novedades </a>
+        </li>          
+        <li class="nav-item">
+          <a class="nav-link" href="Seccion5_Contacto.html"> Contacto </a>
+        </li>                                 
+      </ul>
+
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-warning" type="submit">Buscar</button>
+      </form>
+
+    </div>
+  </nav> 
+
   <body>
+  <main>   
 
-  <section id="grillaMenu">
-          <div id="areaUno">
-            <img src="imagenes/LogoOSTMA.jpg" alt="Logo OTSMA" />
-          </div>    
+  <p class="animate__animated animate__headShake estiloTexto__titulo">  Beneficios para nuestros Socios</p> 
+
+        <section class="sectionResena animated wow animate__animated animate__fadeInRight" data-wow-duration="1s" data-wow-offset="150">   
+          <div class="bloqueTextoImagen">
+              <div class="bloqueTextoImagen__texto">                
+                <ul>
+                  <li class="mt-1 bloqueTextoImagen__linea"> Las mejores veterinarias asociadas  </li>
+                  <li class="mt-1 bloqueTextoImagen__linea"> Veterinarias con guardias las 24 hs </li>
+                  <li class="mt-1 bloqueTextoImagen__linea"> Asesoramiento telefónico las 24 hs </li>
+                  <li class="mt-1 bloqueTextoImagen__linea"> Veterinarios especialistas </li>
+                  <li class="mt-1 bloqueTextoImagen__linea"> Descuentos en Pet Shop's  </li>
+                  <li class="mt-1 bloqueTextoImagen__linea"> Descuentos en remises para mascotas </li>
+                  <li class="mt-1 bloqueTextoImagen__linea"> Sorteos mensuales entre nuestros socios </li>
+                  <li class="mt-1 bloqueTextoImagen__linea"> Regalo sorpresa para los socios nuevos </li>
+                  <li class="mt-1 bloqueTextoImagen__linea"> Regalo de cumpleaños para tu mascota </li>
+                  <li class="mt-1 bloqueTextoImagen__linea"> Descuentos en adiestramiento canino </li>
+                  <li class="mt-1 bloqueTextoImagen__linea"> Importantes descuentos si asocias más de una mascota </li>
+                  <li class="mt-1 bloqueTextoImagen__linea"> 15% OFF sobre el valor de la cuota si tu mascota es perro o gato mestizo </li>
+                </ul>
+              </div>   
+              <div>
+                  <img class="bloqueTextoImagen__imagen img-fluid" src="imagenes/Beneficios.jpeg" alt="Beneficios"> 
+              </div>
+          </div>
+          <hr class="lineaSepara">
+        </section>    
           
-          <div class="areaDos">
 
-              <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container-fluid">
-      
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
-                        <a class="nav-link" href="index.html"> Inicio </a>
-                      </li>
-      
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Beneficios y Planes
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <li><a class="dropdown-item" href="Seccion2_Beneficios.html" > Beneficios </a></li>
-                          <li><a class="dropdown-item" href="Seccion3_Planes.html"> Planes </a></li>
-                        </ul>
-                      </li>
-      
-                      <li class="nav-item">
-                        <a class="nav-link" href="Seccion4_Articulos.html"> Artículos y Novedades </a>
-                      </li>              
-      
-                      <li class="nav-item">
-                        <a class="nav-link" href="Seccion5_Contacto.html"> Contacto </a>
-                      </li>
-                      
-                    </ul>
-                    <form class="d-flex">
-                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                      <button class="btn btn-warning" type="submit">Buscar</button>
-                    </form>
-                  </div>
-                </div>
-              </nav>  
-          </div>  
-  </section>  
+          <p class="estiloTexto__titulo"> Prestadores </p>   
 
-  <hr class="lineaSepara">
-
-    <main>
-      <p class="estiloTexto__titulo">  Beneficios </p> 
-      <br>
-            <ol>
-              <li class="letraBeneficios"> Más de 450 veterinarias asociadas  </li>
-              <li class="letraBeneficios"> Veterinarias con guardias las 24 hs </li>
-              <li class="letraBeneficios"> Asesoramiento telefónico las 24 hs </li>
-              <li class="letraBeneficios"> Veterinarios en especialidades médicas </li>
-              <li class="letraBeneficios"> Descuentos en más de 600 Pet Shop's  </li>
-              <li class="letraBeneficios"> Descuentos y promociones en remises para mascotas </li>
-              <li class="letraBeneficios"> Sorteos mensuales entre nuestros socios </li>
-              <li class="letraBeneficios"> Regalo sorpresa para los socios nuevos </li>
-              <li class="letraBeneficios"> Regalo de cumpleaños para tu mascota </li>
-              <li class="letraBeneficios"> Descuentos en adiestramiento canino </li>
-              <li class="letraBeneficios"> Importantes descuentos si asocias más de una mascota </li>
-              <li class="letraBeneficios"> 15% OFF sobre el valor de la cuota si tu mascota es perro o gato mestizo </li>
-            </ol>
-
-        <hr class="lineaArticulos">
-   
-        <p class="estiloTexto__titulo"> Prestadores </p>   
-        <br>       
-        
-          <table class="table table-striped table-bordered ">  <!-- ...  id="tablaColor">  -->
+          <table class="table table-striped table-bordered "> 
             <thead>
                <th>
                  Prestador
@@ -489,8 +484,9 @@
            </tr>  
 
           </tbody>
-        </table>           
-        
+        </table>  
+
+      <!--
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -531,7 +527,7 @@
               <span class="visually-hidden">Next</span>
             </button>
         </div>
-          
+      -->
                   
         <img id="logoWhatsapp" src="imagenes/LogoWhatsApp.gif" alt="Envianos un Whatsapp">
                 
@@ -540,7 +536,7 @@
     <footer> 
       <br>  
       <div>
-         <a href="index.html"><b>VOLVER</b></a>          
+         <a href="index.html"  class="estiloTexto__link" ><b>Volver</b></a>           
       </div>
 
       <hr class="lineaSepara">
@@ -597,6 +593,11 @@
     </footer>
       
      <!-- Arriba del </body> van todos los scripts   -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+    <script>
+       new WOW().init();
+    </script>   
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>

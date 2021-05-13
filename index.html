@@ -11,6 +11,8 @@
          
          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous"> <!-- bootstrap -->
 
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"  />
+
          <link rel="stylesheet" href="css/estilo.css"> 
 
          <title>OSTMA Obra Social para tu Mascota</title> 
@@ -19,80 +21,59 @@
 
          <meta name="keywords" content="OSTMA, Prepaga mascotas, Obra social para mascotas, Medicina veterinaria, Cuidado veterinario, Capital Federal" >
   </head>  
+
+  <nav id="grillaMenu" class="navbar navbar-expand-lg navbar-light" > 
+      <a class="navbar-brand" href="#">     
+         <img src="imagenes/LogoOSTMA_2.jpg" alt="Logo OTSMA" />
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">    
+        <ul class="navbar-nav me-auto"> 
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html"> <b>Home</b> </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Seccion2_Beneficios.html"> Beneficios </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Seccion3_Planes.html"> Planes </a>
+          </li>  
+          <li class="nav-item">
+            <a class="nav-link" href="Seccion4_Articulos.html"> Artículos y Novedades </a>
+          </li>          
+          <li class="nav-item">
+            <a class="nav-link" href="Seccion5_Contacto.html"> Contacto </a>
+          </li>
+        </ul>
+
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-warning" type="submit">Buscar</button>
+        </form>
+
+      </div>
+  </nav>  
    
   <body>
 
-    <section id="grillaMenu">
-        <div id="areaUno">
-          <img src="imagenes/LogoOSTMA.jpg" alt="Logo OTSMA" />
-        </div>    
-        
-        <div class="areaDos">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-              <div class="container-fluid">
-    
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    
-                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                      <a class="nav-link" href="index.html"> Inicio </a>
-                    </li>
-    
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Beneficios y Planes
-                      </a>
-                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="Seccion2_Beneficios.html" > Beneficios </a></li>
-                        <li><a class="dropdown-item" href="Seccion3_Planes.html"> Planes </a></li>
-                      </ul>
-                    </li>
-    
-                    <li class="nav-item">
-                      <a class="nav-link" href="Seccion4_Articulos.html"> Artículos y Novedades </a>
-                    </li>              
-    
-                    <li class="nav-item">
-                      <a class="nav-link" href="Seccion5_Contacto.html"> Contacto </a>
-                    </li>
-                    
-                  </ul>
-                  <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-warning" type="submit">Buscar</button>
-                  </form>
-                </div>
-              </div>
-            </nav>  
-        </div>  
-    </section>  
+    <main>  
 
-    <hr class="lineaSepara">
+      <section>    
+          <p class="animate__animated animate__headShake estiloTexto__titulo"> OSTMA Obra Social para tu Mascota </p> 
 
-    <main>     
-        <p class="estiloTexto__titulo"> Sobre OSTMA </p>   
-        <section> 
-              <p class="estiloTexto__sub-subtitulo">
-                 Nuestra obra social de excelencia para mascotas posee atención médica de primer nivel las 24 hs, en Capital Federal.
-                 <br>
-                 Consideramos a una mascota como un integrante más de la familia que se merece la mejor atención. 
-                 <br>
-                 La medicina preventiva es la mejor manera de cuidarlos. Con nuestros planes tu mascota tendrá el cuidado que se merece. 
-                 <br>
-                 Tenemos los más completos planes para tu mascota, que elegiste tenerla y cuidarla. 
-                 <br>
-                 Porque sabemos lo costoso que es atenderla, te ofrecemos planes a precios muy accesibles.
-                 <br>
-                 Planes para todo tipos de mascotas: perros, gatos, reptiles, aves y peces.
-                 <br>
-                 La mejor atención veterianria y médicos especialistas de primer nivel.
-                 <br>
-                 OSTMA es tu tranquilidad y lo mejor para tu mascota.
-              </p>
-        </section> 
+          <p class="mt-3 estiloTexto__sub-subtitulo">Nuestra obra social de excelencia para mascotas posee atención médica de primer nivel las 24 hs, en Capital Federal.</p>         
+          <p class="mt-3 estiloTexto__sub-subtitulo"> Consideramos a una mascota como un integrante más de la familia que se merece la mejor atención. </p>          
+          <p class="mt-3 estiloTexto__sub-subtitulo"> La medicina preventiva es la mejor manera de cuidarlos. Con nuestros planes tu mascota tendrá el cuidado que se merece. </p>          
+          <p class="mt-3 estiloTexto__sub-subtitulo">  Tenemos los más completos planes para tu mascota, que elegiste tenerla y cuidarla. </p>             
+          <p class="mt-3 estiloTexto__sub-subtitulo">  Porque sabemos lo costoso que es atenderla, te ofrecemos planes a precios muy accesibles.</p>           
+          <p class="mt-3 estiloTexto__sub-subtitulo">  Planes para todo tipos de mascotas: perros, gatos, reptiles, aves y peces.</p>            
+          <p class="mt-3 estiloTexto__sub-subtitulo">  La mejor atención veterianria y médicos especialistas de primer nivel.</p>      
+          <p class="mt-3 estiloTexto__sub-subtitulo">  OSTMA es tu tranquilidad y lo mejor para tu mascota.</p>          
+      </section> 
 
         <hr class="lineaArticulos">       
 
@@ -254,7 +235,7 @@
     <footer> 
       <br>  
       <div>
-         <a href="index.html"><b>VOLVER</b></a>          
+         <a href="index.html"  class="estiloTexto__link" ><b>Volver</b></a>          
       </div>
 
       <hr class="lineaSepara">
@@ -312,6 +293,11 @@
     </footer>
 
      <!-- Arriba del </body> van todos los scripts   -->
+     <script src="js/wow.min.js"></script>
+     <script>
+        new WOW().init();
+     </script>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>

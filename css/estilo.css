@@ -1,20 +1,25 @@
 @charset "UTF-8";
 #fondoFormu {
   background-color: #f6f9fa;
-  margin-left: 1vw;
   padding-left: 1vw;
-  padding-bottom: 1vh;
-  padding-top: 1vh; }
+  padding-right: 1vw;
+  padding-bottom: 6vh;
+  padding-top: 5vh;
+  width: 60%; }
 
 .estiloTabla {
   color: #f77307; }
+
+@media only screen and (max-width: 768px) {
+  #fondoFormu {
+    width: 100%; } }
 
 video {
   max-width: 100%;
   height: auto; }
 
 hr.lineaSepara {
-  border: 0.277vh solid #e78331; }
+  border: 0.2vh wheat; }
 
 body {
   background-color: #f0eedd;
@@ -31,9 +36,6 @@ header {
   margin-right: 10%;
   align-items: center;
   justify-items: center; }
-
-#logo {
-  float: left; }
 
 #logoWhatsapp {
   position: fixed;
@@ -81,23 +83,34 @@ header {
   color: #e78331;
   font-style: normal;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-align: justify;
+  text-align: center;
   font-weight: bold;
-  font-size: 3.943vh; }
+  font-size: 3.5vh;
+  margin-top: 5vh;
+  margin-bottom: 5vh; }
 
 .estiloTexto__subtitulo {
   font-family: 'Hind', sans-serif;
+  text-align: center;
   font-weight: bold;
-  font-size: 4.258vh; }
+  font-size: 3.3vh;
+  margin-top: 5vh;
+  margin-bottom: 5vh; }
 
 .estiloTexto__sub-subtitulo {
   font-family: 'Hind', sans-serif;
   font-weight: bold;
-  font-size: 3.144vh; }
+  text-align: center;
+  font-size: 2.7vh; }
 
 .estiloTexto__parrafo {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 2.67vh; }
+  font-size: 2.2vh; }
+
+.estiloTexto__link {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2vh;
+  color: #e78331; }
 
 /* termina estilos título, subtítulo y texto */
 /* comienza  Flexbox  footer  */
@@ -143,7 +156,7 @@ header {
     margin: 5.5vh;
     border-top: 0.13vh solid wheat; }
   .estiloArticulos__articulo2 {
-    flex: 0 0 27.7vh;
+    flex: 0 0 27.7vh 0.2vh;
     border: 0.69vh solid wheat;
     box-shadow: 0.27vh 0.27vh 0.83vh 0vh grey;
     align-self: center; }
@@ -165,14 +178,6 @@ header {
   grid-template-areas: "titulo" "tabla" "footer"; }
 
 /* termina grids Seccion3_Planes.html */
-#descripUno, #descripDos, #descripTres, #descripCuatro li {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: bold;
-  font-size: 2.05vh; }
-
-#claseUno, #claseDos, #claseTres, #claseCuatro li {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
-
 /* comienza Grilla de la tabla de planes */
 #grillaDos {
   display: grid;
@@ -183,7 +188,8 @@ header {
   justify-items: center;
   align-items: center;
   border: 0.138vh solid black;
-  padding: 3.462vh 0.69vh 0.69vh 4.847vh; }
+  padding: 2vh 0.6vh 0.6vh 0.6vh;
+  font-size: 2vh; }
 
 #grillaDos #tituloUno,
 #grillaDos #tituloDos,
@@ -192,6 +198,12 @@ header {
   background-color: wheat;
   border-radius: 4.155vh;
   padding: 1.108vh; }
+
+#descripUno, #descripDos, #descripTres, #descripCuatro li {
+  font-family: Verdana, Geneva, Tahoma, sans-serif; }
+
+#claseUno, #claseDos, #claseTres, #claseCuatro li {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
 
 /* termina Grilla de la tabla de planes */
 /* comienza Grilla del menú */
@@ -205,13 +217,8 @@ header {
     width: 100%; }
 
 #grillaMenu {
-  display: grid;
-  grid-template-columns: max-content;
-  grid-template-rows: 100%;
-  grid-template-areas: "areaUno areaDos";
-  justify-items: start;
-  align-items: left;
-  background-image: linear-gradient(to left, #d0914e, wheat); }
+  background-image: linear-gradient(to left, #e78331, wheat);
+  padding: 0.5vw; }
 
 /* termina Grilla del menú */
 .areaDos {
@@ -220,12 +227,6 @@ header {
 
 /* comienza media tablet */
 @media only screen and (max-width: 768px) {
-  #grillaMenu {
-    display: grid;
-    grid-template-columns: max-content;
-    font-size: 1.66vh; }
-  .dropdown-item {
-    font-size: 1.662vh; }
   #grilla {
     display: grid;
     grid-template-rows: 12.618vh 181.388vh 39.432vh; }
@@ -243,24 +244,21 @@ header {
   #grillaDos {
     display: grid;
     height: 181.388vh;
-    font-size: 1.662vh;
-    border: 0.157vh solid #e78331;
-    /* overflow-y: scroll; */ }
+    font-size: 1.3vh;
+    border: 0.157vh solid #e78331; }
   #estiloArticulo_imagen {
     width: 50%;
-    height: 50%; }
+    height: 50%;
+    align-content: center; }
   .estiloFooter {
     align-items: center; }
+  .areaDos {
+    align-self: start;
+    justify-self: right; }
   /* termina  media tablet */ }
 
 /* comienza media mobile */
 @media only screen and (max-width: 480px) {
-  #grillaMenu {
-    display: grid;
-    grid-template-columns: max-content;
-    font-size: 1.892vh; }
-  .dropdown-item {
-    font-size: 1.892vh; }
   #grilla {
     display: grid;
     grid-template-rows: 12.618vh 244.479vh 39.432vh; }
@@ -279,31 +277,25 @@ header {
       font-size: 1.577vh; }
   #grillaDos {
     display: grid;
-    height: 244.47vh;
-    font-size: 1.892vh;
-    border: 0.157vh solid wheat;
-    /* overflow-y: scroll; */ }
+    height: 200vh;
+    font-size: 1.1vh;
+    border: 0.157vh solid wheat; }
   #estiloArticulo_imagen {
     width: 50%;
     height: 50%; }
   .estiloFooter {
     align-items: center; }
+  .areaDos {
+    align-self: start;
+    justify-self: right; }
   /* termina media mobile */ }
-
-input {
-  transition: all 1s; }
-
-input:focus {
-  width: 23.659vw;
-  font-size: 2.839vh;
-  background-color: wheat; }
 
 .letraBeneficios {
   color: black;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: large;
   font-weight: bold;
-  margin-left: 1.104vh; }
+  margin-left: 2vh; }
 
 i {
   font-size: 6.309vh; }
@@ -311,3 +303,25 @@ i {
 i:hover {
   font-size: 7.886vh;
   color: blue; }
+
+#tablaPlanes {
+  background-color: wheat;
+  text-align: left;
+  padding-bottom: 10vh;
+  padding-top: 10vh; }
+
+.bloqueTextoImagen {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-left: 5vh; }
+  .bloqueTextoImagen__texto {
+    width: 120vh; }
+  .bloqueTextoImagen__imagen {
+    align-content: center;
+    justify-content: center; }
+  .bloqueTextoImagen__linea {
+    font-family: 'Hind', sans-serif;
+    font-weight: bold;
+    font-size: 2.7vh; }
