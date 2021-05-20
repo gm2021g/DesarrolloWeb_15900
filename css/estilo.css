@@ -35,7 +35,8 @@ video {
   border-radius: 10px; }
 
 img {
-  border-radius: 10px; }
+  border-radius: 10px;
+  margin-bottom: 2vh; }
 
 hr.lineaSepara {
   border: 0.2vh wheat; }
@@ -118,7 +119,7 @@ i:hover {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
   font-weight: bold;
-  font-size: 3.5vh;
+  font-size: 3.3vh;
   margin-top: 5vh;
   margin-bottom: 5vh; }
 
@@ -126,7 +127,7 @@ i:hover {
   font-family: 'Hind', sans-serif;
   text-align: center;
   font-weight: bold;
-  font-size: 3.3vh;
+  font-size: 3vh;
   margin-top: 5vh;
   margin-bottom: 5vh; }
 
@@ -134,7 +135,7 @@ i:hover {
   font-family: 'Hind', sans-serif;
   font-weight: bold;
   text-align: center;
-  font-size: 2.7vh; }
+  font-size: 2.4vh; }
 
 .estiloTexto__parrafo {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
