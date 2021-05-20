@@ -13,7 +13,7 @@
 
          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"  />
 
-         <link rel="stylesheet" href="css/estilo.css"> 
+         <link rel="stylesheet" href="../css/estilo.css"> 
 
          <title>OSTMA Contacto</title> 
 
@@ -24,7 +24,7 @@
 
   <nav id="grillaMenu" class="navbar navbar-expand-lg navbar-light" > 
     <a class="navbar-brand" href="#">     
-       <img src="imagenes/LogoOSTMA_2.jpg" alt="Logo OTSMA" />
+       <img src="../imagenes/LogoOSTMA.jpg" alt="Logo OTSMA" />
     </a>
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,19 +34,19 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">    
       <ul class="navbar-nav me-auto"> 
         <li class="nav-item">
-          <a class="nav-link" href="index.html"> Home </a>
+          <a class="nav-link estiloTexto__parrafo" href="../index.html"> Home </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="Seccion2_Beneficios.html"> Beneficios </a>
+          <a class="nav-link estiloTexto__parrafo" href="../secciones/Seccion2_Beneficios.html"> Beneficios </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="Seccion3_Planes.html"> Planes </a>
+          <a class="nav-link estiloTexto__parrafo" href="../secciones/Seccion3_Planes.html"> Planes </a>
         </li>  
         <li class="nav-item">
-          <a class="nav-link" href="Seccion4_Articulos.html"> Artículos y Novedades </a>
+          <a class="nav-link estiloTexto__parrafo" href="../secciones/Seccion4_Articulos.html"> Artículos y Novedades </a>
         </li>          
         <li class="nav-item active">
-          <a class="nav-link" href="Seccion5_Contacto.html"> <b>Contacto</b> </a>
+          <a class="nav-link estiloTexto__parrafo" href="../secciones/Seccion5_Contacto.html"> <b>Contacto</b> </a>
         </li>                                 
       </ul>
 
@@ -61,15 +61,13 @@
 <body>
        
     <main>
+      <section> 
 
-      <p class="animate__animated animate__headShake estiloTexto__titulo"> Completa el formulario y te contactaremos a la brevedad </p>
-      <section>              
+        <p class="animate__animated animate__headShake estiloTexto__titulo"> Completa el formulario y te contactaremos a la brevedad </p>             
 
-          <div class="bloqueTextoImagen">
-            <div id="fondoFormu" >
-              <form action="" >
-                  <fieldset > 
-                      <legend> <B> Completa los siguientes datos </B> </legend>
+          <div id="fondoFormu" >
+              <form action="">
+                  <fieldset> 
     
                       <div class="form-group row mb-3">
                         <label class="control-label col-sm-2" for="nombre">Nombre</label>
@@ -151,18 +149,13 @@
                       <div class="btn btn-warning btn-sm ">
                         <input type="reset" value="Limpiar formulario"/>              
                       </div>
-
+                    </div>
                   </fieldset>
               </form>
-              </div>
-      
-              <div>
-                  <img class="bloqueTextoImagen__imagen img-fluid" src="imagenes/Contacto.jpeg" alt="Contacto"> 
-              </div>
           </div>
 
-        <img id="logoWhatsapp" src="imagenes/LogoWhatsApp.gif" alt="Envianos un Whatsapp">
-
+        <img id="logoWhatsapp" src="../imagenes/LogoWhatsApp.gif" alt="Envianos un Whatsapp">
+      
       </section>      
    
     </main>
@@ -170,7 +163,7 @@
     <footer> 
       <br>  
       <div>
-        <a href="index.html"  class="estiloTexto__link" ><b>Volver</b></a>         
+        <a href="../index.html"  class="estiloTexto__link" ><b>Volver</b></a>         
       </div>
 
       <hr class="lineaSepara">

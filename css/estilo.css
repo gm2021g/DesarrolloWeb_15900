@@ -1,22 +1,41 @@
 @charset "UTF-8";
 #fondoFormu {
   background-color: #f6f9fa;
-  padding-left: 1vw;
-  padding-right: 1vw;
-  padding-bottom: 6vh;
-  padding-top: 5vh;
-  width: 60%; }
+  margin-left: 15vw;
+  padding: 5vh 1vw 6vh 1vw;
+  width: 70%; }
 
 .estiloTabla {
   color: #f77307; }
 
 @media only screen and (max-width: 768px) {
   #fondoFormu {
-    width: 100%; } }
+    margin-left: 3vw;
+    padding: 1vh 1vw 1vh 1vw;
+    width: 95%; } }
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  height: 6vh;
+  width: 6vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  background-size: 100%, 100%;
+  border-radius: 50%; }
+
+.carousel-caption {
+  color: black !important;
+  font-weight: bold;
+  font-size: larger; }
+
+.carousel-item img {
+  border-radius: 20px; }
 
 video {
   max-width: 100%;
-  height: auto; }
+  height: auto;
+  border-radius: 10px; }
+
+img {
+  border-radius: 10px; }
 
 hr.lineaSepara {
   border: 0.2vh wheat; }
@@ -25,25 +44,42 @@ body {
   background-color: #f0eedd;
   margin: 1.38vh; }
 
-header {
-  background-image: linear-gradient(to left, #e78331, #f0eedd);
-  height: 33.24vh; }
-
-#menu {
-  float: left;
-  width: 65%;
-  margin-top: 2.077vh;
-  margin-right: 10%;
-  align-items: center;
-  justify-items: center; }
-
 #logoWhatsapp {
   position: fixed;
   height: 8.31vh;
   width: 8.31vh;
   bottom: 1.577vh;
-  right: 1.577vh;
-  border: 0.157vh solid #a5b1a5; }
+  right: 1.577vh; }
+
+i {
+  font-size: 6vh; }
+
+i:hover {
+  font-size: 7.886vh;
+  color: orange; }
+
+#tablaPlanes {
+  background-color: wheat;
+  text-align: left;
+  width: 90%;
+  align-self: center;
+  margin-left: 5vw; }
+
+/* Se usa en Beneficios */
+.bloqueTextoImagen {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-left: 5vh; }
+  .bloqueTextoImagen__texto {
+    width: 120vh;
+    font-weight: bold;
+    font-family: 'Hind', sans-serif;
+    font-size: 2.7vh; }
+  .bloqueTextoImagen__imagen {
+    padding: 1vh;
+    border-radius: 20px; }
 
 /* comienza estilos Flexbox  index  galería de fotos */
 .estiloSocios {
@@ -51,31 +87,28 @@ header {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around; }
-
-.estiloSocios__cardSocio {
-  flex: 0 0 27.7vh;
-  margin: 2.7vh;
-  border: 0.13vh solid #f0eedd;
-  box-shadow: 0.27vh 0.27vh 0.83vh 0vh #e78331;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  transition: height 1s, width 1s;
-  justify-items: center; }
-
-.estiloSocios__cardSocio:hover {
-  background-color: wheat;
-  box-shadow: 0.27vh 0.27vh 0.83vh 0vh #8a3451;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-style: oblique;
-  font-weight: bold;
-  font-size: 140%; }
-
-.estiloSocios__cardSocioImg {
-  height: 16.62vh;
-  width: 100%; }
-
-.estiloSocios__cardSocioDiv {
-  padding: 0.788vh 0.788vh 0.788vh 2.365vh;
-  /*  padding-top   padding-right   padding-bottom   padding-left  */ }
+  .estiloSocios .estiloSocios__cardSocio {
+    flex: 0 0 27vh;
+    margin: 1.5vh;
+    border: 0.1vh solid #f0eedd;
+    box-shadow: 0.27vh 0.27vh 0.83vh 0vh #e78331;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: height 1s, width 1s;
+    justify-items: center; }
+  .estiloSocios .estiloSocios__cardSocio:hover {
+    background-color: wheat;
+    box-shadow: 0.27vh 0.27vh 0.83vh 0vh #8a3451;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: oblique;
+    font-weight: bold;
+    font-size: 140%; }
+  .estiloSocios .estiloSocios__cardSocioImg {
+    height: 16.6vh;
+    width: 100%;
+    border-radius: 1px; }
+  .estiloSocios .estiloSocios__cardSocioDiv {
+    padding: 0.5vh 0.5vh 0.5vh 0.5vh;
+    text-align: center; }
 
 /* termina estilos Flexbox  index  galería de fotos */
 /* comienza estilos título, subtítulo y texto */
@@ -124,14 +157,14 @@ header {
     margin: 2.077vh;
     border: 0; }
   .estiloFooter__footerTitulo {
-    padding: 0.692vh 0.692vh 0.692vh 4.847vh;
+    padding: 0.7vh 0.7vh 0.7vh 4.8vh;
     border: 0.138vh solid wheat;
     box-shadow: 0.277vh 0.277vh 0.415vh 0vh grey;
     background-color: wheat;
     animation-duration: 2s;
     animation-name: letras; }
   .estiloFooter__footerItems {
-    padding: 0.69vh 0.69vh 0.69vh 4.84vh; }
+    padding: 0.7vh 0.7vh 0.7vh 4.8vh; }
   .estiloFooter__texto {
     color: black;
     font-family: Verdana, Geneva, Tahoma, sans-serif; }
@@ -145,183 +178,90 @@ header {
     color: #e78331; } }
 
 /* termina  Flexbox  footer  */
-/* comienza  Flexbox  Seccion4_Articulos  */
+/* comienza estilos Articulos y Novedades */
 .estiloArticulos {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around; }
-  .estiloArticulos__articulo {
-    flex: 13.8vh 13.8vh 27.7vh 13.8vh;
-    margin: 5.5vh;
-    border-top: 0.13vh solid wheat; }
-  .estiloArticulos__articulo2 {
-    flex: 0 0 27.7vh 0.2vh;
-    border: 0.69vh solid wheat;
-    box-shadow: 0.27vh 0.27vh 0.83vh 0vh grey;
-    align-self: center; }
-  .estiloArticulos__detalle {
-    padding: 0 2.77vh 2.77vh; }
-  .estiloArticulos__listaArticulos {
-    color: black;
-    list-style-type: circle;
-    list-style-position: inside;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-style: italic; }
-
-/* termina  Flexbox  Seccion4_Articulos */
-/* comienza grids Seccion3_Planes.html */
-#grilla {
   display: grid;
-  grid-template-rows: 11.08vh 110.80vh 41.551vh;
-  grid-template-columns: 100%;
-  grid-template-areas: "titulo" "tabla" "footer"; }
-
-/* termina grids Seccion3_Planes.html */
-/* comienza Grilla de la tabla de planes */
-#grillaDos {
-  display: grid;
-  grid-template-columns: 15% 15% 20% 50%;
-  grid-template-rows: 5% 24% 24% 24% 24%;
-  border-radius: 4.155vh;
-  grid-template-areas: "tituloUno     tituloDos     tituloTres    tituloCuatro" "planUno       claseUno      precioUno     descripUno" "planDos       claseDos      precioDos     descripDos" "planTres      claseTres     precioTres    descripTres" "planCuatro    claseCuatro   precioCuatro  descripCuatro";
+  grid-template-areas: "artUno       artUno" "artDos       artTres" "artCuatro    artCinco" "artSeis      artSiete" "artOcho      artOcho";
+  font-size: 2.3vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 2vh 2vh 5vh 2vh;
+  padding: 5vh 2vh 2vh 2vh;
+  border: 0.1vh solid #e78331;
+  border-radius: 4vh;
   justify-items: center;
-  align-items: center;
-  border: 0.138vh solid black;
-  padding: 2vh 0.6vh 0.6vh 0.6vh;
-  font-size: 2vh; }
+  align-items: center; }
 
-#grillaDos #tituloUno,
-#grillaDos #tituloDos,
-#grillaDos #tituloTres,
-#grillaDos #tituloCuatro {
-  background-color: wheat;
-  border-radius: 4.155vh;
-  padding: 1.108vh; }
+.artUno {
+  grid-area: artUno; }
 
-#descripUno, #descripDos, #descripTres, #descripCuatro li {
-  font-family: Verdana, Geneva, Tahoma, sans-serif; }
+.artDos {
+  grid-area: artDos;
+  padding-top: 5vh; }
 
-#claseUno, #claseDos, #claseTres, #claseCuatro li {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+.artTres {
+  grid-area: artTres;
+  padding-top: 5vh; }
 
-/* termina Grilla de la tabla de planes */
-/* comienza Grilla del menú */
-#grillaTres {
+.artCuatro {
+  grid-area: artCuatro;
+  padding-top: 5vh; }
+
+.artCinco {
+  grid-area: artCinco;
+  padding-top: 5vh; }
+
+.artSeis {
+  grid-area: artSeis; }
+
+.artSiete {
+  grid-area: artSiete; }
+
+.artOcho {
+  grid-area: artOcho; }
+
+/* termina estilos Articulos y Novedades */
+/* comienza Grilla de la tabla de servicios */
+#grillaServicios {
   display: grid;
-  grid-template-columns: 20% 20% 20% 20% 20%;
-  justify-items: start;
-  align-items: center;
-  width: 100%; }
-  #grillaTres li {
-    width: 100%; }
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 25% 25% 25% 25%;
+  grid-template-areas: "areaUno       areaDos      areaTres     areaCuatro" "areaCinco     areaSeis     areaSiete    areaOcho" "areaNueve     areaDiez     areaOnce     areaDoce" "areaTrece     areaCatorce  areaQuince   areaDiezySeis";
+  font-size: 2.3vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 2vh 2vh 5vh 2vh;
+  padding: 5vh 2vh 2vh 10vh;
+  border: 0.1vh solid #e78331;
+  border-radius: 4vh; }
 
+/* termina Grilla de la tabla de servicios */
+/* comienza Grilla del menú */
 #grillaMenu {
   background-image: linear-gradient(to left, #e78331, wheat);
   padding: 0.5vw; }
 
 /* termina Grilla del menú */
-.areaDos {
-  align-self: start;
-  justify-self: left; }
-
 /* comienza media tablet */
 @media only screen and (max-width: 768px) {
-  #grilla {
-    display: grid;
-    grid-template-rows: 12.618vh 181.388vh 39.432vh; }
-  #grillaTres {
-    display: flex;
-    flex-direction: column;
-    grid-template-columns: 100%;
-    grid-template-rows: 20% 20% 20% 20% 20%;
-    background-color: #e78331;
-    margin-left: 17.350vh;
-    margin-top: 0vh;
-    font-size: 1.577vh;
-    height: 31.54vh;
-    width: 45%; }
-  #grillaDos {
-    display: grid;
-    height: 181.388vh;
-    font-size: 1.3vh;
-    border: 0.157vh solid #e78331; }
-  #estiloArticulo_imagen {
-    width: 50%;
-    height: 50%;
-    align-content: center; }
+  #grillaServicios {
+    font-size: 2vh;
+    padding: 5vh 2vh 2vh 2vh; }
+  .estiloArticulos {
+    grid-template-areas: "artUno       artUno" "artDos       artDos" "artTres      artTres" "artCuatro    artCinco" "artSeis      artSiete" "artOcho      artOcho";
+    margin: 0.5vh 0.5vh 0.5vh 0.5vh;
+    padding: 0.5vh 0.5vh 0.5vh 0.5vh; }
   .estiloFooter {
     align-items: center; }
-  .areaDos {
-    align-self: start;
-    justify-self: right; }
   /* termina  media tablet */ }
 
 /* comienza media mobile */
 @media only screen and (max-width: 480px) {
-  #grilla {
-    display: grid;
-    grid-template-rows: 12.618vh 244.479vh 39.432vh; }
-  #grillaTres {
-    display: flex;
-    flex-direction: column;
-    grid-template-columns: 100%;
-    grid-template-rows: 20% 20% 20% 20% 20%;
-    background-color: #e78331;
-    margin-left: 23.659vh;
-    margin-top: 0vh;
-    height: 31.545vh;
-    width: 45%; }
-    #grillaTres li {
-      width: 100%;
-      font-size: 1.577vh; }
-  #grillaDos {
-    display: grid;
-    height: 200vh;
-    font-size: 1.1vh;
-    border: 0.157vh solid wheat; }
-  #estiloArticulo_imagen {
-    width: 50%;
-    height: 50%; }
+  #grillaServicios {
+    font-size: 1.4vh;
+    padding: 5vh 1vh 1vh 1vh; }
+  .estiloArticulos {
+    grid-template-areas: "artUno       artUno" "artDos       artDos" "artTres      artTres" "artCuatro    artCinco" "artSeis      artSiete" "artOcho      artOcho";
+    margin: 0.5vh 0.5vh 0.5vh 0.5vh;
+    padding: 0.5vh 0.5vh 0.5vh 0.5vh; }
   .estiloFooter {
     align-items: center; }
-  .areaDos {
-    align-self: start;
-    justify-self: right; }
   /* termina media mobile */ }
-
-.letraBeneficios {
-  color: black;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: large;
-  font-weight: bold;
-  margin-left: 2vh; }
-
-i {
-  font-size: 6.309vh; }
-
-i:hover {
-  font-size: 7.886vh;
-  color: blue; }
-
-#tablaPlanes {
-  background-color: wheat;
-  text-align: left;
-  padding-bottom: 10vh;
-  padding-top: 10vh; }
-
-.bloqueTextoImagen {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  margin-left: 5vh; }
-  .bloqueTextoImagen__texto {
-    width: 120vh; }
-  .bloqueTextoImagen__imagen {
-    align-content: center;
-    justify-content: center; }
-  .bloqueTextoImagen__linea {
-    font-family: 'Hind', sans-serif;
-    font-weight: bold;
-    font-size: 2.7vh; }
