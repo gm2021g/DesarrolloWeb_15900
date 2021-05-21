@@ -52,7 +52,7 @@ body{
     position:fixed;    
     @include sizes (8.310vh, 8.310vh);
     bottom: 1.577vh;
-    right: 1.577vh;
+    right: 1.577vw;
 }  
     
 i{
@@ -78,17 +78,17 @@ i:hover{
   flex-direction: row; 
   align-items:flex-start;
   flex-wrap: wrap;  
-  margin-left: 5vh;
+  margin-left: 0.2vh;
  
   &__texto {        
       width: 120vh;
       font-weight: bold;
       font-family: 'Hind', sans-serif;
-      font-size: 2.7vh; 
+      font-size: 2.5vh; 
   }
 
   &__imagen {
-      padding: 1vh; 
+      padding: 0.2vh; 
       border-radius: 20px;
   }
 }
@@ -104,7 +104,7 @@ i:hover{
       flex: 0 0 27vh;
       margin: 1.5vh;  
       border: 0.1vh solid $colorCuatro;
-      box-shadow: 0.27vh 0.27vh 0.83vh 0vh $colorBase;
+      box-shadow: 0.27vh 0.27vw 0.83vh 0vw $colorBase;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       transition: height 1s, width 1s;
       justify-items: center; 
@@ -112,7 +112,7 @@ i:hover{
 
     .estiloSocios__cardSocio:hover {
       @include fondoColor ($colorDos);
-      box-shadow: 0.27vh 0.27vh 0.83vh 0vh $colorTres;
+      box-shadow: 0.27vh 0.27vw 0.83vh 0vw $colorTres;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
       font-style: oblique;
       font-weight: bold;
@@ -125,7 +125,7 @@ i:hover{
     }
 
     .estiloSocios__cardSocioDiv {
-         padding:  0.5vh 0.5vh 0.5vh 0.5vh;  
+         padding:  0.5vh 0.5vw 0.5vh 0.5vw;  
          text-align: center;
     }
   }  
@@ -187,9 +187,9 @@ i:hover{
        }  
      
        &__footerTitulo{
-         padding:  0.7vh 0.7vh 0.7vh 4.8vh; 
+         padding:  0.7vh 0.7vw 0.7vh 4.8vw; 
          border: 0.138vh solid $colorDos;
-         box-shadow: 0.277vh 0.277vh 0.415vh 0vh grey;
+         box-shadow: 0.277vh 0.277vw 0.415vh 0vw grey;
          @include fondoColor ($colorDos); 
          animation-duration: 2s;
          animation-name: letras;
@@ -228,8 +228,8 @@ i:hover{
   "artOcho      artOcho";      
   font-size: 2.3vh;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin: 2vh 2vh 5vh 2vh;
-  padding: 5vh 2vh 2vh 2vh; 
+  margin: 2vh 2vw 5vh 2vw;
+  padding: 5vh 2vw 2vh 2vw; 
   border: 0.1vh solid $colorBase;
   border-radius: 4vh;
   justify-items: center;
@@ -279,8 +279,8 @@ i:hover{
     "areaTrece     areaCatorce  areaQuince   areaDiezySeis"; 
     font-size: 2.3vh;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 2vh 2vh 5vh 2vh;
-    padding: 5vh 2vh 2vh 10vh;
+    margin: 2vh 2vw 4vh 2vw;
+    padding: 3vh 2vw 2vh 4vw;
     border: 0.1vh solid $colorBase;
     border-radius: 4vh;
   }
@@ -296,8 +296,8 @@ i:hover{
   /* comienza media tablet */
   @media only screen and (max-width: 768px){
     #grillaServicios {  
-      font-size: 2vh;
-      padding: 5vh 2vh 2vh 2vh;
+      font-size: 1.8vh;
+      padding: 3vh 2vw 2vh 0.5vw;
     }
 
     .estiloArticulos {   
@@ -308,8 +308,8 @@ i:hover{
       "artCuatro    artCinco"
       "artSeis      artSiete"
       "artOcho      artOcho";   
-      margin: 0.5vh 0.5vh 0.5vh 0.5vh;
-      padding: 0.5vh 0.5vh 0.5vh 0.5vh; 
+      margin: 0.5vh 0.5vw 0.5vh 0.5vw;
+      padding: 0.5vh 0.5vw 0.5vh 0.5vw; 
     }
 
     .estiloFooter {
@@ -322,7 +322,7 @@ i:hover{
   @media only screen and (max-width: 480px){
     #grillaServicios {  
       font-size: 1.4vh;
-      padding: 5vh 1vh 1vh 1vh;
+      padding: 3vh 1vw 2vh 0.5vw;
     }
   
     .estiloArticulos {   
@@ -333,8 +333,8 @@ i:hover{
       "artCuatro    artCinco"
       "artSeis      artSiete"
       "artOcho      artOcho";  
-      margin: 0.5vh 0.5vh 0.5vh 0.5vh;
-      padding: 0.5vh 0.5vh 0.5vh 0.5vh; 
+      margin: 0.5vh 0.5vw 0.5vh 0.5vw;
+      padding: 0.5vh 0.5vw 0.5vh 0.5vw; 
       }
 
     .estiloFooter {
