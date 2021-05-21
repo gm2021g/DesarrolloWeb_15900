@@ -10,9 +10,8 @@
 
 @media only screen and (max-width: 768px) {
   #fondoFormu {
-    margin-left: 3vw;
-    padding: 1vh 1vw 1vh 1vw;
-    width: 95%; } }
+    margin-left: 1vw;
+    padding: 1vh 1vw 1vh 1vw; } }
 
 .carousel-control-prev-icon, .carousel-control-next-icon {
   height: 6vh;
@@ -224,9 +223,9 @@ i:hover {
 /* comienza Grilla de la tabla de servicios */
 #grillaServicios {
   display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: 25% 25% 25% 25%;
-  grid-template-areas: "areaUno       areaDos      areaTres     areaCuatro" "areaCinco     areaSeis     areaSiete    areaOcho" "areaNueve     areaDiez     areaOnce     areaDoce" "areaTrece     areaCatorce  areaQuince   areaDiezySeis";
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+  grid-template-areas: "areaUno       areaDos      areaTres  " "areaCuatro    areaCinco    areaSeis  "     "areaSiete     areaOcho     areaNueve "     "areaDiez      areaOnce     areaDoce  " "areaTrece     areaCatorce  areaQuince";
   font-size: 2.3vh;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin: 2vh 2vw 4vh 2vw;
@@ -244,12 +243,13 @@ i:hover {
 /* comienza media tablet */
 @media only screen and (max-width: 768px) {
   #grillaServicios {
-    font-size: 1.8vh;
-    padding: 3vh 2vw 2vh 0.5vw; }
+    font-size: 2vh;
+    padding: 3vh 0.2vh 2vh 0.2vh;
+    margin: 2vh 0.2vh 4vh 0.2vh; }
   .estiloArticulos {
     grid-template-areas: "artUno       artUno" "artDos       artDos" "artTres      artTres" "artCuatro    artCinco" "artSeis      artSiete" "artOcho      artOcho";
-    margin: 0.5vh 0.5vw 0.5vh 0.5vw;
-    padding: 0.5vh 0.5vw 0.5vh 0.5vw; }
+    margin: 0.5vh 0.2vh 0.5vh 0.2vh;
+    padding: 0.5vh 0.2vh 0.5vh 0.2vh; }
   .estiloFooter {
     align-items: center; }
   /* termina  media tablet */ }
@@ -257,8 +257,13 @@ i:hover {
 /* comienza media mobile */
 @media only screen and (max-width: 480px) {
   #grillaServicios {
-    font-size: 1.4vh;
-    padding: 3vh 1vw 2vh 0.5vw; }
+    font-size: 1.8vh;
+    padding: 2vh 0.01vh 2vh 0.01vh;
+    margin: 2vh 0.01vh 4vh 0.01vh;
+    text-align: left;
+    align-items: center;
+    align-self: center;
+    align-content: center; }
   .estiloArticulos {
     grid-template-areas: "artUno       artUno" "artDos       artDos" "artTres      artTres" "artCuatro    artCinco" "artSeis      artSiete" "artOcho      artOcho";
     margin: 0.5vh 0.5vw 0.5vh 0.5vw;
