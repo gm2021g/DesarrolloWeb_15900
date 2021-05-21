@@ -1,7 +1,7 @@
 #fondoFormu {
     background-color:#f6f9fa;
-    margin-left: 15vw;
-    padding: 5vh 1vw 6vh 1vw;
+    margin-left: 15vh;
+    padding: 5vh 1vh 6vh 1vh;
     width: 70%;
   }
 
@@ -11,7 +11,8 @@
 
 @media only screen and (max-width: 768px){
   #fondoFormu {
-    margin-left: 1vw;
-    padding: 1vh 1vw 1vh 1vw;
+    margin-left: 1vh;
+    padding: 1vh 1vh 1vh 1vh;
+    width: 95%;
   }
 }
