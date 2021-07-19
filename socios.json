@@ -1,42 +1,42 @@
 [
 	{
-		"imagen": "../imagenes/Blanquita.jpg",
+		"imagen": "./imagenes/Blanquita.jpg",
 		"nombre": "Blanquita",
 		"barrio": "Alberti",
 		"plan": "310"
 	},
 	{
-		"imagen": "../imagenes/Canela.jpg",
+		"imagen": "./imagenes/Canela.jpg",
 		"nombre": "Canela",
 		"barrio": "San Nicolás",
 		"plan": "510"
 	},
 	{
-		"imagen": "../imagenes/Benji.jpg",
+		"imagen": "./imagenes/Benji.jpg",
 		"nombre": "Benji",
 		"barrio": "Lanús",
 		"plan": "310"
 	},
 	{
-		"imagen": "../imagenes/Bernie.jpg",
+		"imagen": "./imagenes/Bernie.jpg",
 		"nombre": "Bernie",
 		"barrio": "Almagro",
 		"plan": "210"
 	},
 	{
-		"imagen": "../imagenes/Coco.jpg",
+		"imagen": "./imagenes/Coco.jpg",
 		"nombre": "Coco",
 		"barrio": "Tapiales",
 		"plan": "410"
 	},
 	{
-		"imagen": "../imagenes/Connie.jpg",
+		"imagen": "./imagenes/Connie.jpg",
 		"nombre": "Connie",
 		"barrio": "Luján",
 		"plan": "510"
 	},
 	{
-		"imagen": "../imagenes/Donna.jpg",
+		"imagen": "./imagenes/Donna.jpg",
 		"nombre": "Donna",
 		"barrio": "La Plata",
 		"plan": "510"
