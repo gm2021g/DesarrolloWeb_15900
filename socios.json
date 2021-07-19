@@ -48,8 +48,8 @@
 		"plan": "510"
 	},
 	{
-		"imagen": "../imagenes/Donna.jpg",
-		"nombre": "Donna",
+		"imagen": "../imagenes/Rita.jpg",
+		"nombre": "Rita",
 		"barrio": "Avellaneda",
 		"plan": "510"
 	},
@@ -76,6 +76,23 @@
 		"nombre": "Lola",
 		"barrio": "Liniers",
 		"plan": "510"
+	},
+	{
+		"imagen": "../imagenes/Pati.jpg",
+		"nombre": "Pati",
+		"barrio": "Villa Lugano",
+		"plan": "310"
+	},
+	{
+		"imagen": "../imagenes/Nino.jpg",
+		"nombre": "Nino",
+		"barrio": "Tapiales",
+		"plan": "410"	
+	},
+	{
+		"imagen": "../imagenes/Micha_y_Rocco.jpg",
+		"nombre": "Micha_y_Rocco",
+		"barrio": "Villa Madero",
+		"plan": "410"			
 	}
-	
 ]
