@@ -49,18 +49,19 @@
 	},
 	{
 		"imagen": "../imagenes/Donna.jpg",
-		"nombre": "Avellaneda",
+		"nombre": "Donna",
+		"barrio": "Avellaneda",
 		"plan": "510"
 	},
 	{
-		"imagen": "../imagenes/Junnior.jpg",
-		"nombre": "Junnior",
+		"imagen": "../imagenes/Junior.jpg",
+		"nombre": "Junior",
 		"barrio": "San Justo",
 		"plan": "210"
 	},
 	{
 		"imagen": "../imagenes/Donna.jpg",
-		"nombre": "Bobby",
+		"nombre": "Donna",
 		"barrio": "La Plata",
 		"plan": "310"
 	},
