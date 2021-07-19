@@ -40,5 +40,47 @@
 		"nombre": "Donna",
 		"barrio": "La Plata",
 		"plan": "510"
+	},
+	{
+		"imagen": "../imagenes/Caty.jpg",
+		"nombre": "Caty",
+		"barrio": "La Plata",
+		"plan": "510"
+	},
+	{
+		"imagen": "../imagenes/Donna.jpg",
+		"nombre": "Avellaneda",
+		"plan": "510"
+	},
+	{
+		"imagen": "../imagenes/Junnior.jpg",
+		"nombre": "Junnior",
+		"barrio": "San Justo",
+		"plan": "210"
+	},
+	{
+		"imagen": "../imagenes/Donna.jpg",
+		"nombre": "Bobby",
+		"barrio": "La Plata",
+		"plan": "310"
+	},
+	{
+		"imagen": "../imagenes/Max.jpg",
+		"nombre": "Max",
+		"barrio": "San Martín",
+		"plan": "410"
+	},
+	{
+		"imagen": "../imagenes/Mara.jpg",
+		"nombre": "Mara",
+		"barrio": "Floresta",
+		"plan": "210"
+	},
+	{
+		"imagen": "../imagenes/Lola.jpg",
+		"nombre": "Lola",
+		"barrio": "Liniers",
+		"plan": "510"
 	}
+	
 ]
